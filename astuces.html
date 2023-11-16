@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Guide sur Pokemon Unite | Astuces</title> 
+        <link href="CSS/style.min.css" rel="stylesheet">
+        <link href="CSS/responsive.css" rel="stylesheet">
+    </head>
+    <body>
+<!--Menu pour la version Ordinateur-->        
+        <div class="menu">
+        </div>
+        <div id="PUG-header-bg-astuces"></div>
+        <div id="PUG-header">
+            <div class="header-nav">
+                <div class="header-inner container">
+                    <div class="PUG-nav-item">
+                        <div class="item--1">
+                            <a href="index.html" classe="item"> Accueil</a>
+                            <a href="rank.html" classe="item"> Rank</a>
+                            <a href="objets.html" classe="item"> Objets</a>
+                            <a href="roles.html" classe="item"> Roles</a>
+                        </div>
+                        <div class="item--2">
+                            <a href="astuces.html" classe="item active"> Astuces</a>
+                        </div>
+                    </div>
+                </div>
+                <a href="rank.html" class="header-logo-astuces"></a>
+                <div class="header-control">
+                    <div class="header-inner container">
+                        <div class="box social">
+                            <a href="https://discord.gg/YsGYpU83dz">
+                                <i class="mid mid-discord"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container main-container">
+            <div id ="page">
+                <div id="full-size">
+                    <div class="boite-index">
+                        <div class="update-header">
+                            <div class="update-title">
+                                Quelques astuces !
+                            </div>
+                            <div class="update-date">
+                                Vendredi 17 Novembre 2023
+                            </div>
+                        </div>
+                        <!-- Petit texte d'introduction -->
+                        <div class="motif-astuces">
+                             <p>
+                                Voici donc quelques astuces pour vous aider.
+                            </p>
+                            <p>
+                                <br>Tout d'abord un peu de vocabulaire par rapport au jeu :<br>
+                                <br>1: Méta = changement d'une saison rendant des pokémon plus ou moins fort suivant si ils ont eu des buffs, des nerfs ou rien.<br>
+                                <br>2: Buff = changement positif sur un personnage / Nerf = changement négatif sur un personnage.<br>
+                                <br>3: Jungle = voie du mileu ou il y a le plus de farm.<br>
+                                <br>4: Farm = tout les pokémon non jouable pouvant être mis KO et qui dinne de l'expérience.<br>
+                                <br>5: Push = fait d'avancer vers les bases ennemis pour battre un adversaire ou casser leur base / Back = fait de se retirer du combat pour aller se soigner.<br>
+                                <br>6: DPS = synonyme pour les attaquants qui mettent beaucoup de dégâts.<br>
+                                <br>7: Objectifs = "boss", apparaissant à des moment très précis, qui donne des boosts à l'équipe qui les bats.<br>
+                                <br>8: Stun = effet appliqué par certaines attaques étourdissant celui qu'il la subit.<br>
+                                <br>Voilà pour le vocabulaire principal, passons aux astuces !<br>
+                            </p>
+                        </div>
+                        <!-- Première astuce -->
+                        <div class="motif-astuces">
+                            <p>
+                               Première astuce : les Objectifs.
+                           </p>
+                           <p>
+                               <br>Il existe 5 objectifs différents :<br>
+                               <br>Regieleki : Se trouvant sur la voie du haut, il avancera vers la base ennemie à l'équipe l'ayant battu et permettra de marquer ses points instantanément.<br>
+                               <br>Regirock : Se trouvant sur la voie du bas, il donnera de l'expérience et un bouclier augmentant la défense et la défense spéciale à l'équipe l'ayant battu.<br>
+                               <br>Registeel : Se trouvant sur la voie du bas, il donnera de l'expérience et un bouclier augmentant l'attaque' et l'attaque spéciale à l'équipe l'ayant battu.<br>
+                               <br>Regice : Se trouvant sur la voie du bas, il donnera de l'expérience et un bouclier augmentant la régénération à l'équipe l'ayant battu.<br>
+                               <br>Rayquaza : Se trouvant sur la voie du milieu, il donnera un bouclier augmentant de 60% les dégâts et qui permet de marquer plus vite à l'équipe qui l'a battu.<br>
+                               <br>Dans une partie, il vaut mieux privilégier l'objectif du bas car il donne de l'expérience à toute l'équipe contrairement à l'objectif du haut qui n'en donne qu'au pokemon qui l'a battu. Cela permet de remonter dans la partie malgré les difficultés rencontrées par exemple.<br>
+                           </p>
+                          <!-- Images en rapport avec -->
+                           <div class="contenues-astuces">
+                               <div class="prev" onclick="prev()"></div>
+                               <div class="sliderindex">
+                                   <img src="C:/Users/victo/OneDrive/Bureau/Mini Projet/img/regieleki.jpg" class="image1 displayed">
+                                   <img src="C:/Users/victo/OneDrive/Bureau/Mini Projet/img/regirock.png" class="image1 displayed">
+                                   <img src="C:/Users/victo/OneDrive/Bureau/Mini Projet/img/registeel.jpg" class="image1 displayed">
+                                   <img src="C:/Users/victo/OneDrive/Bureau/Mini Projet/img/regice.jpg" class="image1 displayed">
+                                   <img src="C:/Users/victo/OneDrive/Bureau/Mini Projet/img/rayquaza.jpg" class="image1 displayed">
+                               </div>
+                               <div class="next" onclick="next()"></div>
+                            </div>
+                        </div>
+                        <!-- Deuxième astuce -->
+                        <div class="motif-astuces2">
+                         <p>
+                           Deuxième astuce : le Placement.
+                         </p>
+                         <p>
+                           <br>Le placement de votre pokémon consiste à être à un endroit stratégique suivant votre rôle.<br>
+                           <br>Pour cela il faut aussi ne pas prendre de risques inutiles.<br>
+                           <br>Par exemple il ne faut pas push la base adverse tout seule ou bien engager un combat seul contre 3 sauf cas exceptionnel.<br>
+                           <br>Si vous appliquez cela vous ne tomberez pas KO bêtement et donc vous ne donnerez pas d'expérience aux ennemis.<br>
+                         </p>
+                        <!-- Troisième astuce -->
+                        <div class="motif-astuces3">
+                            <p>
+                                Troisième astuce : s'adapter à son équipe.
+                            </p>
+                            <p>
+                                <br>S'adapter à son équipe consite à prendre certains rôles de pokémon suivant ceux que prennent les alliés afin de mettre toutes ses chances de son côté.<br>
+                                <br>Par exemple si mes alliés on pris 3 attaquants et un polyvalent il vaut mieux prendre un défenseur car en cas de push de l'équipe adverse il ne vont pas résister longtemps.<br>
+                                <br>Autre exemple, si dans mon équipe quelqu'un joue un pokémon évoluant au niveau 9 il vaut mieux que je prenne un Soutien avec le Multi exp et que je l'accompagne afin qu'il ne prenne pas trop de temps à monter de niveau.<br>
+                            </p>
+                        </div>
+                        </div>
+                        <!-- Quatrième astuce -->
+                        <div class="motif-astuces4">
+                            <p>
+                            La quatrième astuce : les deux boutons d'attaque.
+                        </p>
+                        <p>
+                            <br>Cette technique peut vous éviter de rater l'opportunité d'un KO par exemple.<br>
+                            <br>Il s'agit d'activer un bouton avec lequel vous ne pourrez taper que le farm et un autre avec lequel vous taperez les ennemis.<br>
+                            <br>Pour cela aller dans l'onglet "Paramètres" de votre jeu. Allez ensuite dans "Commande" et activez ce bouton ( voir la photo en dessous ).<br>
+                        </p>
+                        <!-- Images en rapport avec -->
+                        <div class="contenues-astuces4">
+                            <div class="prev" onclick="prev()"></div>
+                            <div class="sliderindex">
+                                <img src="C:/Users/victo/OneDrive/Bureau/Mini Projet/img/bot.jpg" class="image1 displayed">
+                            </div>
+                            <div class="next" onclick="next()"></div>
+                            </div>
+                    </div>
+                    <!-- Conclusion -->
+                    <div class="motif-astuces5">
+                        <p>
+                        Voilà on espère que cela vous a été utile.
+                    </p>
+                    <p>
+                        <br>Si vous avez d'autres questions n'hésitez pas à rejoindre le Discord afin de nous les poser.<br>
+                        <br>D'autres astuces apparaiteront surement suites aux prochaines mises à jour du jeu.<br>
+                        <br>Nous vous tiendrons au courant !<br>
+                    </p>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+        <script src="JS/script.js"></script>
+        <script src="JS/imageswitch.js"></script>
+        <!-- Création du footer, petit texte en bas -->
+        <footer id = "footer" >
+            <div id="PU-footer">
+                <div class="footer-main">
+                    <div class="body-inner.container">
+                        <div class="main-block"> 
+                            <h3>Bienvenue</h3>
+                            <div class="content-rank">
+                                <p>
+                                    BIENVENUE SUR CE GUIDE SUR POKEMON UNITE ! <br>
+                                    Ici se trouve la dernière section donnat quelques astuces de jeu. <br>
+                                    Ces astuces vont vous aidez à vous améliorer grandement sur le jeu ! <br>
+                                    N'hésitez donc pas à les mettre en place. <br>
+                                </p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <!-- Pareil mais pour les droits d'auteur -->
+                    <div class="footer-copyright">
+                        <div class="body-inner container">
+                            <div class="copyright-texte">
+                                <b>Wohlfarth Victor</b>
+                                <b>Images et vidéos tirées du jeu Pokémon Unite développé par Tencent et Timi studio à la demande de The Pokemon Compagny </b>
+                                <small> Tout droits réservés </small>
+                            </div>
+                            <div class="copyright-links">
+                                <a href="Terms.html">Terms</a>
+                                <a href="Privacy.html">Privacy</a>
+                            </div>
+                    </div>
+                <div>
+            </div>
+        </footer>
+    </body>
+</html>

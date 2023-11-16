@@ -1,0 +1,787 @@
+/* Création de la première page du site */ 
+body{
+    font-family: "Popping", sans-serif;
+    margin: 0;
+    background: rgb(164, 163, 163);
+    display: flex;
+    min-height: 100%;
+    flex-direction: column;
+}
+
+/* Création de ce que contient la première page du site */ 
+.container{
+    width: 100%;
+    padding: 0% 10%;
+    box-sizing: border-box;
+}
+
+.container.main-container{
+    z-index: 1340;
+}
+
+#page{
+    position: relative;
+    display: flex;
+}
+
+/* Disposition des boutons cliquables de la page */ 
+.menu .back .item{
+    display : none;
+}
+
+/* Bandeau en haut de la page */ 
+#PUG-header-bg{
+    position: absolute;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 390px;
+    max-width: calc(100% + 20%);
+    background: rgb(231, 131, 56) url("C:/Users/victo/OneDrive/Bureau/Mini Projet/img/unite.jpg") no-repeat center/100% auto;
+}
+
+#PUG-header{
+    position: relative;
+    z-index: 2000;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header-nav{
+    padding: 1,5%;
+}
+
+.PUG-nav-item{
+    display: flex;
+    align-items: center;
+}
+
+.PUG-nav-item .item--1{
+    margin-right: auto;
+    font-style: oblique;
+}
+
+.PUG-nav-item .item--2{
+    position: relative;
+    top: 0;
+    font-style: oblique;
+}
+/* Boutons avant d'avoir cliqué */ 
+.header-nav .item{
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.85);
+    font-weight: 600;
+    text-decoration: overline;
+    height: 50px;
+    text-align: center;
+    display: inline-block;
+    line-height: 50px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 50px;
+}
+
+/* Boutons après avoir cliqué */ 
+.header-nav .item:after{
+    content: "";
+    position: absolute;
+    bottom: 2%;
+    left: 0%;
+    right: 0%;
+    margin: 0 auto;
+    width: 0;
+    height: 3px;
+    border-radius: 50%;
+    color: black;
+}
+
+.header-nav .item:focus,
+.header-nav .item:hover{
+    color: white;
+}
+
+.header-nav .item.active{
+    color: #ffffff;
+}
+
+.header-nav .item.active:after{
+    width: 75%;
+    height: 3px;
+    background: #000000;
+}
+
+/* Création du logo de la page */ 
+.header-logo{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0 auto;
+    width: 50%;
+    height: 60%;
+    max-width: 90%;
+    background: url("C:/Users/victo/OneDrive/Bureau/Mini Projet/img/banniere.png") no-repeat center/100% auto;
+}
+
+.header-control{
+    position: absolute;
+    bottom: 10px;
+    left: 0%;
+    right: 0%;
+    margin: 0 auto;
+    padding: 1% 1% 0% 1%;
+
+}
+
+.header-control .header-inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box{
+    height: 42px;
+}
+
+.box-social{
+    font-size: 0;
+}
+
+.box.social a{
+    background: rgba(150, 150, 150, 0.1);
+    border-radius: 6px;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    color: white;
+    margin-right: 15px;
+}
+
+.box.social a i{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.box.social a i .mid-discord{
+    top: 1px;
+    font-size: 24px;
+}
+
+.box.social a:focus,
+.box.social a:hover{
+    color: rgb(0, 0, 250);
+    background: white;
+}
+
+/* Création du footer/petit texte en bas de la page */ 
+#footer{
+    margin-top: 10px;
+}
+
+#footer .body-inner{
+    padding-right: 50px 20px 40px;
+}
+
+.footer-main{
+    background: #1c038c;
+}
+
+.footer-main h3{
+    color: #ffffff;
+}
+
+.footer-main p{
+    display: block;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 30px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.main-block{
+    padding: 0% 5% 15px;
+    flex: calc(33.3333% - 10%);
+}
+
+.main-block h3{
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0 0 30px;
+    position: relative;
+}
+
+.main-block h3:after{
+    content: "";
+    position: absolute;
+    top: calc(100% + 6px);
+    left: 0;
+    border-radius: 5px;
+    width: 35px;
+    height: 3px;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Création du footer pour les "droits d'auteur" */ 
+.footer-copyright{
+    background: #2f3648;
+    line-height: 25px;
+}
+
+.footer-copyright .body-inner{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.copyright-texte{
+    position: relative;
+    color: rgba(100,100,100,0.8);
+}
+
+.copyright-texte b{
+    margin-left: 40px;
+}
+
+.copyright-texte b,
+.copyright-texte small{
+    font-size: 14px;
+}
+
+.copyright-texte small:before{
+    content: "-";
+    margin: 0.5px 0.7px;
+    display: inline-block;
+}
+
+.copyright-links{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+.copyright-links a{
+    font-weight: 600;
+    text-decoration: none;
+    align-items: center;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.copyright-links a:focus,
+.copyright-links a:hover{
+    color: rgba(255, 255, 255, 0.85);
+}
+
+.copyright-links a:first-child{
+    margin-right: 20px;
+}
+
+#full-size{
+    width: 100%;
+    padding: 0 10%;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.boite-index{
+    background: white;
+    border-radius: 5px;
+    text-align: center;
+    width: 80vw;
+    padding: 2%;
+    margin-bottom: 2%;
+}
+
+.update-title{
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(50, 50, 50);
+    text-align: left;
+}
+
+.update-date{
+    font-size: 16px;
+    font-weight: 200;
+    color: rgba(50, 50, 50, 0.8);
+    text-align: left;
+    padding: 0% 3%;
+}
+
+/* Textes sur la page */ 
+.motif{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+/* Images sur la page */ 
+.contenues{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Menu déroulent pour les images / non fonctionnel */ 
+.sliderindex{
+    width: 70vw;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0.3vw 0.3vw 0;
+    border: 2px solid rgb(150, 150, 150);
+    box-shadow: 1px 1px 12px #555;
+    margin: 10px -2px;
+}
+
+.sliderindex img{
+    display: none;
+}
+
+.sliderindex img.displayed{
+    width: 69.4vw;
+    display: inline;
+}
+
+.sliderindex img.displayed{
+    width: 69.4vw;
+    height: 39.0375;
+    display: inline;
+}
+
+
+
+/* Création de la même chose mais pour la fenêtre "rank" */ 
+
+.motif-rank{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.motif-rank2{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.motif-rank3{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.motif-rank4{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.motif-rank5{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.motif-rank6{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.contenues-rank{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-rank2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-rank3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-rank4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-rank5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-rank6{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#PUG-header-bg-rank{
+    position: absolute;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 390px;
+    max-width: calc(100% + 20%);
+    background: rgb(231, 131, 56) url("C:/Users/victo/OneDrive/Bureau/Mini Projet/img/unite rank.jpg") no-repeat center/100% auto;
+}
+
+.header-logo-rank{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0 auto;
+    width: 50%;
+    height: 60%;
+    max-width: 90%;
+    background: url("C:/Users/victo/OneDrive/Bureau/Mini Projet/img/banniere classement.png") no-repeat center/100% auto;
+}
+
+
+/* Création de la même chose mais pour la fenêtre "objets" */ 
+
+.motif-objets{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.motif-objets2{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.motif-objets3{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.motif-objets4{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.motif-objets5{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.motif-objets6{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(100, 100, 100);
+    padding: 1% 2%;
+}
+
+.contenues-objets{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-objets2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-objets3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-objets4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-objets5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-objets6{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#PUG-header-bg-objets{
+    position: absolute;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 390px;
+    max-width: calc(100% + 20%);
+    background: rgb(231, 131, 56) url("C:/Users/victo/OneDrive/Bureau/Mini Projet/img/unite.jpg") no-repeat center/100% auto;
+}
+
+.header-logo-objets{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0 auto;
+    width: 50%;
+    height: 60%;
+    max-width: 90%;
+    background: url("C:/Users/victo/OneDrive/Bureau/Mini Projet/img/banniere objet.png") no-repeat center/100% auto;
+}
+
+/* Création de la même chose mais pour la fenêtre "roles" */ 
+
+.motif-roles{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(184, 102, 102);
+    padding: 1% 2%;
+}
+
+.motif-roles2{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(184, 102, 102);
+    padding: 1% 2%;
+}
+
+.motif-roles3{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(133, 102, 184);
+    padding: 1% 2%;
+}
+
+.motif-roles4{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(102, 140, 184);
+    padding: 1% 2%;
+}
+
+.motif-roles5{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(102, 184, 102);
+    padding: 1% 2%;
+}
+
+.motif-roles6{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(184, 168, 102);
+    padding: 1% 2%;
+}
+
+.contenues-roles{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-roles2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-roles3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-roles4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-roles5{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-roles6{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#PUG-header-bg-roles{
+    position: absolute;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 390px;
+    max-width: calc(100% + 20%);
+    background: rgb(231, 131, 56) url("C:/Users/victo/OneDrive/Bureau/Mini Projet/img/map.jpg") no-repeat center/100% auto;
+}
+
+.header-logo-roles{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0 auto;
+    width: 50%;
+    height: 60%;
+    max-width: 90%;
+    background: url("C:/Users/victo/OneDrive/Bureau/Mini Projet/img/banniere role.png") no-repeat center/100% auto;
+}
+
+/* Création de la même chose mais pour la fenêtre "astuces" */ 
+.motif-astuces{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(197, 129, 45);
+    padding: 1% 2%;
+}
+
+.motif-astuces2{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(68, 45, 197);
+    padding: 1% 2%;
+}
+
+.motif-astuces3{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(165, 102, 184);
+    padding: 1% 2%;
+}
+
+.motif-astuces4{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(58, 65, 73);
+    padding: 1% 2%;
+}
+
+.motif-astuces5{
+    border-top: 1px solid rgb(50, 50, 50);
+    text-align: left;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+    padding: 1% 2%;
+}
+
+.contenues-astuces{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenues-astuces4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#PUG-header-bg-astuces{
+    position: absolute;
+    z-index: 1000;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 390px;
+    max-width: calc(100% + 20%);
+    background: rgb(231, 131, 56) url("C:/Users/victo/OneDrive/Bureau/Mini Projet/img/astuce.jpg") no-repeat center/100% auto;
+}
+
+.header-logo-astuces{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin: 0 auto;
+    width: 50%;
+    height: 60%;
+    max-width: 90%;
+    background: url("C:/Users/victo/OneDrive/Bureau/Mini Projet/img/banniere astuces.png") no-repeat center/100% auto;
+}
